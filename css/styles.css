@@ -17,11 +17,27 @@
 
 }
 
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 body{font-family: 'Roboto', sans-serif;
 background-color: var(--background-color);
 color: var(--primary-text-color);
 
 }
+
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .list{list-style: none;}
 
 /* header styles */
@@ -101,15 +117,21 @@ color: var(--accent-color);
 
 
 .order{
+    display: inline-block;
     background-color: var(--accent-color);
     color: var(--accent-text-color);
     font-weight: 700;
-font-size: 16px;
-line-height: 1.9;
-align: center;
-vertical-align: center;
-letter-spacing: 0.06em;
-border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.9;
+    align: center;
+    vertical-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px;32px;
+    min-width: 216px;
+
+
+
     }
  
 
@@ -162,7 +184,9 @@ letter-spacing: 0.03em;
 
 
 /*main Portfolio styles*/
-.choice{
+.choice-all, .choice-web, .choice-applications, .choice-design, .choice-marketing
+{
+    display: inline-block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -172,8 +196,43 @@ letter-spacing: 0.03em;
     color: var(--title-text-color);
     cursor: pointer;
     border-radius: 4px;
+    padding: 6px;22px;
+    text-align: center;
 }
-.choice:hover, .choice:focus {
+.choice-all{
+    min-width: 73px;
+}
+.choice-web{
+    min-width: 125px;
+}
+.choice-applications{
+    min-width: 112px;
+}
+.choice-design{
+    min-width: 112px;
+}
+.choice-marketing{
+    min-width: 130px;
+}
+
+.choice-all:hover, .choice-all:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+}
+
+.choice-web:hover, .choice-web:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+}
+.choice-applications:hover, .choice-applications:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+}
+.choice-design:hover, .choice-design:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+}
+.choice-marketing:hover, .choice-marketing:focus {
     background-color: var(--accent-color);
     color: var(--accent-text-color);
 }
