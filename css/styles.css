@@ -27,6 +27,28 @@ html{
     box-sizing: inherit;
 }
 
+.header-container, .slogan-container, .benefits-container,.activity-container,
+.team-container, .examples-container, .footer-container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-container{
+    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.examples-container{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 body{font-family: 'Roboto', sans-serif;
 background-color: var(--background-color);
 color: var(--primary-text-color);
@@ -42,6 +64,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
 
 /* header styles */
 
+.site-nav{
+    display: flex;
+}
+.site-nav li{
+    margin-right: 50px;
+}
 .logo{font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -99,10 +127,14 @@ color: var(--accent-color);
 
 }
 
+
 /* main index styles */
 /* hero */
 .slogan{
     background-color: var(--accent-background-color);
+    text-align: center;
+    margin-bottom: 94px;
+      
 }
 
 .slogan-title{   
@@ -110,9 +142,9 @@ color: var(--accent-color);
         font-weight: 700;
         font-size: 44px;
         line-height: 1.4;
-        align-items: center;
-        text-align: center;
+        
         letter-spacing: 0.06em;
+        margin-bottom:30px;
 }
 
 
@@ -129,14 +161,15 @@ color: var(--accent-color);
     border-radius: 4px;
     padding: 10px;32px;
     min-width: 216px;
-
-
-
     }
  
+    .benefits{
+        margin-bottom: 94px;
+    }
 
 .hidden-title{
     color: var(--background-color);
+    margin-bottom: 10px;
 }
 
 .title{
@@ -159,10 +192,15 @@ color: var(--accent-color);
             line-height: 1.17;
             text-align: center;
             letter-spacing: 0.03em;
+            margin-bottom:50px;
+}
+.activity{
+    margin-bottom:94px;
 }
 
 .team{
     background-color: var(--color1);
+    
 } 
 .title-name{
     color: var(--title-text-color);
@@ -262,6 +300,15 @@ letter-spacing: 0.03em;
 footer{
     background-color: var(--accent-background-color);
 }
+.logo-footer{font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
 
 .footer-link{
     color: var(--accent-text-color);
