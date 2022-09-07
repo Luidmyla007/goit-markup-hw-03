@@ -89,7 +89,11 @@ h1,h2,h3,h4,h5,h6,p,{
 
 /* header styles */
 
-
+.header{
+    border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #757575;
+}
 
 .logo{
     display: block;
@@ -194,9 +198,6 @@ color: var(--accent-color);
     }
  
     
-
-
-
 .hidden-title{
     position: absolute;
     width: 1px;
@@ -318,7 +319,12 @@ letter-spacing: 0.03em;
 .picture{
     text-decoration: none;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
+}
+.card{
+    border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #757575;
 }
 .picture-title{
     
