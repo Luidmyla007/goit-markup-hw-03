@@ -248,6 +248,7 @@ line-height: 1.2;
 align-items: center;
 vertical-align: top;
 letter-spacing: 0.03em;
+margin-bottom: 10px;
 }
 .qualification{
 font-size: 16px;
@@ -431,16 +432,45 @@ footer .logo-second{
 
   .benefits-reestr{
     display: flex;
-    align:center
+          
   }
 
-  .benefits-reestr>li{
-    width: 270px;
-    height: 98px;
-    background-color: tomato;
+  .benefits-reestr-position{
+    width: 270px;       
+  }
+
+.benefits-reestr-position:last-child:{
+  margin-right: 30px;
+}
+
+.action{
+    display: flex;
+}
+.action li{
+    display: block;
+    margin-right: 30px;
+}
+
+.action li:last-child:{
+    margin-right: 30px;
+}
+
+.team-photo{
+    display: flex;
+}
+.photo-bandit{
+    display: block;
+    margin-bottom: 30px;
     
-  }
+}
 
+.bandit{ 
+    margin-right: 30px;
+    text-align: center;
+}
+.bandit:last-child:{
+    margin-right: 30px;
+}
 
   /* flex portfolio */
 
@@ -453,8 +483,7 @@ footer .logo-second{
 }
 
 .name-button{
-    padding-right: ;
-        padding-bottom: 34px;
+            padding-bottom: 34px;
 
 }
 
