@@ -36,13 +36,14 @@ html{
 }
 .header{
     display: flex;
+    align-items: center;
 }
 
 .slogan{
     background-color: var(--accent-background-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;      
+    padding-top: 200px;     
+    padding-bottom: 200px;
 }
 
 .benefits{
@@ -58,6 +59,7 @@ html{
 .team{
     
     padding-bottom: 94px;
+    background-color: var(--color1);
 }
 
 .examples{
@@ -75,9 +77,9 @@ color: var(--primary-text-color);
 
 }
 
-h1,h2,h3,h4,h5,h6,p,{
-    margin-top: 0;
-    margin-bottom: 0;
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -89,7 +91,7 @@ h1,h2,h3,h4,h5,h6,p,{
 
 /* header styles */
 
-.header{
+.header.container{
     border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #757575;
@@ -103,8 +105,6 @@ h1,h2,h3,h4,h5,h6,p,{
     line-height: 1.2;
     text-decoration: none;
     letter-spacing: 0.03em;
-    width: 145px;
-    height: 31px;
     padding-top: 19px;
     padding-bottom: 30px;
      margin-right: 93px;
@@ -217,13 +217,16 @@ color: var(--accent-color);
     color: var(--title-text-color);
         font-weight: 700;
         font-size: 14px;
-        line-height: 1,14;
+        line-height: 1.14;
         letter-spacing: 0.03em;
+        margin: 0;
+        margin-bottom: 10px;
 }
 .title-decoding{
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
+        margin: 0;
 }
 .title-second{
     color: var(--title-text-color);
@@ -258,8 +261,11 @@ align-items: center;
 vertical-align: top;
 letter-spacing: 0.03em;
 }
-
-
+.additional-wrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 
 /*main Portfolio styles*/
 .choice-all, .choice-web, .choice-applications, .choice-design, .choice-marketing
@@ -359,14 +365,11 @@ footer{
     text-decoration: none;
     letter-spacing: 0.03em;
     display: block;
-    width: 145px;
-    height: 31px;
-margin-bottom: 20px;
-margin-left: 215px;
+    margin-bottom: 20px;
    
 }
  .footer-adress{
-    margin-left: 215px;
+    
  }
 
 .footer-link{
@@ -407,7 +410,7 @@ footer .logo-second{
 /* flex index */
 .site-nav{
     display: flex;
-    align:center
+    /* align-items: center; */
    
 }
 .site-nav li{
@@ -438,6 +441,7 @@ footer .logo-second{
 
   .benefits-reestr{
     display: flex;
+    gap: 30px;
           
   }
 
@@ -445,34 +449,32 @@ footer .logo-second{
     width: 270px;       
   }
 
-.benefits-reestr-position:last-child:{
-  margin-right: 30px;
-}
 
 .action{
     display: flex;
+    gap: 30px;
 }
 .action li{
     display: block;
-    margin-right: 30px;
+    
 }
 
-.action li:last-child:{
-    margin-right: 30px;
-}
+
 
 .team-photo{
     display: flex;
 }
-.photo-bandit{
+.photo-colleague{
     display: block;
-    margin-bottom: 30px;
+   
     
 }
 
-.bandit{ 
+.coleague{ 
     margin-right: 30px;
     text-align: center;
+    border-radius: 4px;
+    background-color: var(--accent-text-color);
 }
 .bandit:last-child:{
     margin-right: 30px;
@@ -485,6 +487,8 @@ footer .logo-second{
     width: 575px; 
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
+
    
 }
 
