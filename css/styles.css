@@ -410,18 +410,26 @@ footer .logo-second{
 /* flex index */
 .site-nav{
     display: flex;
-    /* align-items: center; */
-   
-}
-.site-nav li{
-    margin-right: 50px;
-    padding-top: 27px;
-    padding-left: 27px;
 }
 
-.site-nav li:last-child:{
-    margin-right: 0;
+.site-navigation{
+ display: flex;
+ align-items: center;
+ list-style: none;
+ margin-top: 0;
+ margin-bottom: 0;
+gap: 50px;   
+
 }
+
+.header-link{
+    display: block;
+    padding-top: 32px;
+ padding-bottom: 32px;
+}
+
+
+
 
 .auth-nav{
     display: flex;
@@ -430,8 +438,8 @@ footer .logo-second{
 
 .auth-nav li{
     margin-right: 50px;
-    padding-top: 27px;
-    padding-bottom: 37px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
  }
 
@@ -463,6 +471,7 @@ footer .logo-second{
 
 .team-photo{
     display: flex;
+    gap: ;
 }
 .photo-colleague{
     display: block;
