@@ -39,6 +39,13 @@ html{
     align-items: center;
 }
 
+.main-header{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC;
+
+}
+
 .slogan{
     background-color: var(--accent-background-color);
     text-align: center;
@@ -91,11 +98,11 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* header styles */
 
-.header.container{
-    border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #757575;
-}
+/* .header.container{ */
+    /* border-bottom-width: 1px; */
+  /* border-bottom-style: solid; */
+  /* border-bottom-color: #757575; */
+/* } */
 
 .logo{
     display: block;
@@ -265,9 +272,14 @@ letter-spacing: 0.03em;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*main Portfolio styles*/
+
+.portf{
+    background-color: var(--background-color);
+}
 .choice-all, .choice-web, .choice-applications, .choice-design, .choice-marketing
 {
     display: inline-block;
@@ -280,7 +292,6 @@ letter-spacing: 0.03em;
     color: var(--title-text-color);
     cursor: pointer;
     border-radius: 4px;
-    padding: 6px;22px;
     text-align: center;
     border:1px solid var(--color1)
 }
@@ -327,11 +338,7 @@ letter-spacing: 0.03em;
     display: block;
     margin-bottom: 20px;    
 }
-.card{
-    border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #757575;
-}
+
 .picture-title{
     
     color: var(--title-text-color);
@@ -339,8 +346,8 @@ letter-spacing: 0.03em;
     font-size: 16px;
     line-height: 2;
     letter-spacing: 0.06em;  
-    margin-bottom: 4px; 
-padding-left: 24px;
+    
+
 }
 
 .picture-title-kind{
@@ -348,8 +355,17 @@ padding-left: 24px;
     font-weight: 400;
     font-size: 18px;
     line-height: 2;
+    
+}
+.second-wrap{
+    padding-top: 20px;
+    padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
+    border-right: 1px solid #EEEEEE; 
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+
 }
 
 
@@ -471,7 +487,7 @@ gap: 50px;
 
 .team-photo{
     display: flex;
-    gap: ;
+    gap: 30px;
 }
 .photo-colleague{
     display: block;
@@ -484,6 +500,7 @@ gap: 50px;
     text-align: center;
     border-radius: 4px;
     background-color: var(--accent-text-color);
+    box-shadow: rgba(0, 0, 0, 0.2);
 }
 .bandit:last-child:{
     margin-right: 30px;
