@@ -37,6 +37,7 @@ html{
 .header{
     display: flex;
     align-items: center;
+    background-color: var(--accent-text-color);
 }
 
 .main-header{
@@ -56,13 +57,13 @@ html{
 }
 
 .benefits{
-    background-color: var(--background-color);
+    background-color: var(--accent-text-color);
     padding-top: 94px;
     padding-bottom: 94px;
  }
 
 .activity{
-    background-color: var(--background-color);
+    background-color: var(--accent-text-color);
     padding-bottom:94px;
 }
 
@@ -284,8 +285,10 @@ letter-spacing: 0.03em;
 /*main Portfolio styles*/
 
 .portf{
-    background-color: var(--background-color);
+    background-color: var(--accent-text-color)
 }
+
+
 .choice-all, .choice-web, .choice-applications, .choice-design, .choice-marketing
 {
     display: inline-block;
@@ -346,7 +349,7 @@ letter-spacing: 0.03em;
 .picture{
     text-decoration: none;
     display: block;
-    margin-bottom: 20px;    
+        
 }
 
 .picture-title{
