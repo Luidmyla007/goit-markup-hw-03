@@ -69,7 +69,7 @@ html{
 
 
 .team{
-    
+    padding-top: 94px;
     padding-bottom: 94px;
     
 }
@@ -531,10 +531,7 @@ padding: 0;
    
 }
 
-.name-button{
-            padding-bottom: 34px;
 
-}
 
 .name-button:last-child:{
     margin-right: 8px;
